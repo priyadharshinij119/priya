@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Responsive Design</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(120deg, #89f7fe, #66a6ff);
+        min-height: 100vh;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        width: 30%;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #555;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        color: white;
+    }
+
+    /* Tablet View */
+    @media (max-width: 900px) {
+        .card {
+            width: 45%;
+        }
+
+        header {
+            font-size: 24px;
+        }
+    }
+
+    /* Mobile View */
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 90%;
+        }
+
+        header {
+            font-size: 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    🌟 Responsive Creative Cards
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Design</h2>
+        <p>Creative layouts that adapt beautifully to any screen size.</p>
+    </div>
+
+    <div class="card">
+        <h2>Flexbox</h2>
+        <p>Modern alignment using flexible and responsive layout system.</p>
+    </div>
+
+    <div class="card">
+        <h2>Media Queries</h2>
+        <p>Adjust styles for mobile, tablet, and desktop views.</p>
+    </div>
+</div>
+
+<footer>
+    ✨ Built with HTML, CSS & Media Queries
+</footer>
+
+</body>
+</html>
